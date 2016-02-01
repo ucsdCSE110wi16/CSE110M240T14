@@ -1,0 +1,1 @@
+CSE110M240T14ScheduleWeek 4: Complete UI design for Toilet Wall, Map, and Rating pageWeek 5: Complete functionalities of Toilet Wall, and Rating page. Start connecting Wall and Rating page to main map. Setting up backend to store data.Week 6: Finish connecting functionalities to main map.
