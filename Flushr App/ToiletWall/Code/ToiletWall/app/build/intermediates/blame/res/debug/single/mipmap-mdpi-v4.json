@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/abc/AndroidStudioProjects/ToiletWall/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
+        "source": "/Users/abc/AndroidStudioProjects/ToiletWall/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/ToiletWall/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
+        "source": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/ToiletWall/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

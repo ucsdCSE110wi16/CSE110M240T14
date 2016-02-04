@@ -1,5 +1,6 @@
 package com.visiondq.www.toiletwall;
 
+import android.content.DialogInterface;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,8 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private DrawingView drawView;
 
@@ -21,8 +21,22 @@ public class MainActivity extends AppCompatActivity {
 
     boolean colorPalletisOpen = false;
 
+    public void onClick(View view){
+        //respond to clicks
+        if(view.getId()==R.id.drawing){
+            //draw button clicked
+            drawView.setErase(false);
+        }
+        else if(view.getId()==R.id.eraser){
+            //switch to erase - choose size
+            drawView.setErase(true);
+        }
+    }
+
+
 
     public void paintClicked(View view){
+        drawView.setErase(false);
         //use chosen color
         if(view!=currPaint){
             //update color
@@ -82,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         currPaint = (ImageButton)findViewById(R.id.darkblueColorButton);
         eraseBtn = (ImageButton)findViewById(R.id.eraser);
 
-       // eraseBtn.setOnClickListener(this);
+        eraseBtn.setOnClickListener(this);
 
     }
 

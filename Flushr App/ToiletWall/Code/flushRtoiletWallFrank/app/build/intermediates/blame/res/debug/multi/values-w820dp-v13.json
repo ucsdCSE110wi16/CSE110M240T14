@@ -1,0 +1,133 @@
+[
+    {
+        "outputFile": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/flushRtoiletWallFrank/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/flushRtoiletWallFrank/app/src/main/res/values-w820dp/dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 42,
+                    "endOffset": 151
+                },
+                "from": {
+                    "file": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/flushRtoiletWallFrank/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 42,
+                        "endOffset": 588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 156,
+                    "endColumn": 43,
+                    "endOffset": 195
+                },
+                "from": {
+                    "file": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/flushRtoiletWallFrank/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 461,
+                        "endColumn": 43,
+                        "endOffset": 500
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 200,
+                    "endColumn": 42,
+                    "endOffset": 238
+                },
+                "from": {
+                    "file": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/flushRtoiletWallFrank/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 374,
+                        "endColumn": 42,
+                        "endOffset": 412
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 243,
+                    "endColumn": 43,
+                    "endOffset": 282
+                },
+                "from": {
+                    "file": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/flushRtoiletWallFrank/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 593,
+                        "endColumn": 43,
+                        "endOffset": 632
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 287,
+                    "endColumn": 44,
+                    "endOffset": 327
+                },
+                "from": {
+                    "file": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/flushRtoiletWallFrank/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 505,
+                        "endColumn": 44,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 332,
+                    "endColumn": 43,
+                    "endOffset": 371
+                },
+                "from": {
+                    "file": "/Users/Frankie/CSE110/CSE110M240T14/Flushr App/ToiletWall/Code/flushRtoiletWallFrank/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 417,
+                        "endColumn": 43,
+                        "endOffset": 456
+                    }
+                }
+            }
+        ]
+    }
+]
