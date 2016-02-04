@@ -2,6 +2,7 @@ package com.visiondq.www.toiletwall;
 
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.util.AttributeSet;
@@ -28,6 +29,15 @@ public class DrawingView extends View {
     private Bitmap canvasBitmap;
     //add a boolean instance variable to act as a flag for whether the user is currently erasing
     private boolean erase=false;
+
+
+    public void setColor(String newColor){
+    //set color
+        invalidate();
+        paintColor = Color.parseColor(newColor);
+        drawPaint.setColor(paintColor);
+
+    }
 
     public DrawingView(Context context, AttributeSet attrs){
         super(context, attrs);
