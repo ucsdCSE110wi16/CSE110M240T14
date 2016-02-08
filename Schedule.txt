@@ -1,5 +1,6 @@
-CSE110M240T14ScheduleWeek 4: Complete UI design for Toilet Wall, Map, and Rating pageWeek 5: Complete functionalities of Toilet Wall, and Rating page. Start connecting Wall and Rating page to main map. Setting up backend to store data.Week 6: Create main page of the app, and start connecting three functionalities to main page.
-Week 7: Finish connecting all functionalities to the main page. Setting up data base to store user’s data.
-Week 8: Bug fixing, and start to store the locations of toilet into database.
-Week 9: Finish all the functionalities of app, and store all the locations of restroom into app.
-Week 10: Maintenance of the app.
+CSE110M240T14
+Schedule
+
+Week 4: Complete UI design for Toilet Wall, Map, and Rating page
+Week 5: Complete functionalities of Toilet Wall, and Rating page. Start connecting Wall and Rating page to main map. Setting up backend to store data.
+Week 6: Finish connecting functionalities to main map.
