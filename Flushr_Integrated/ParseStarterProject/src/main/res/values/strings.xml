@@ -7,8 +7,8 @@
   ~ of patent rights can be found in the PATENTS file in the same directory.
   -->
 <resources>
-    <string name="parse_app_id">YOUR_APPLICATION_ID</string>
-    <string name="parse_client_key">YOUR_CLIENT_KEY</string>
+    <string name="parse_app_id">EvFJCkrPw0Cau5LUOEkhQlYqrwpAz3p033cwKd4a</string>
+    <string name="parse_client_key">ep1rVvl01APJImENzR3ac9YhdD3tHIXVLL8jWIyK</string>
 
     <string name="app_name">Parse Starter Project</string>
 
@@ -17,4 +17,14 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_create_page">CreatePageActivity</string>
     <string name="title_activity_toilet_wall">ToiletWallActivity</string>
+
+    <string name="google_maps_key">AIzaSyCDO6Po8RYa5wfDa6TnUWII1AqEZ0ZJUHU</string>
+
+        <string name="hint_name">Full Name</string>
+        <string name="hint_email">Email</string>
+        <string name="hint_password">Password</string>
+        <string name="btn_sign_up">Sign Up</string>
+        <string name="err_msg_name">Enter your full name</string>
+        <string name="err_msg_email">Enter valid email address</string>
+        <string name="err_msg_password">Enter the password</string>
 </resources>

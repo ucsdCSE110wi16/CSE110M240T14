@@ -2,18 +2,235 @@
 <items version="2" >
 
     <item
-        jar="/Users/nickge/Desktop/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-da17dc4a7cab75696e72785df836b906b8f00587.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-49f09da81506c69be50be3562c39e74753bbe89b.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-e35cf88fd4a639b453192c6f91fc388311e525f3.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-11ba7a7f30fc56e780282d0c56566a51fc48a50a.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-77bc2e38bc4c498b8e17c716cd41d46196d34fba.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-14c1b4f4a834ed2f370d15cb627eee9db6e2293c.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-6977622c8ccb23e1daa92c4f81195a582be71a22.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-1a10f6b345b200ccb916cb962409d61c645170b7.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-f386a3f13e6430c625bd36255cbb200211cef9d8.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-10e2dba79124c737eef5d89b210812db2e5a317e.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-06945324554b6747f97c230dbb9dd4b9ad16ea3a.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-efe54c3dbaed9b9c4980dc758401b4529601dbd8.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-9c8035a1b5a6dfcb2fdb3d50909faaf76b2f90a4.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-068a3e408134a5f3d8a0cd769d64bb5c7a09bd8a.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-df9033b5128b279bfe1704b07092d2dc432ccfc9.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-adab3b0069a7de657a80f1e5bb62fa2e63c2c75f.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-5e8dac53871e5aaec7c53c79d37a8db99c63f9c3.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-bcb953fa17f5f7eea4beb289d3101449e5758f2f.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-ee0dad11a2bc66108d9327da4cbdb8bb0aa44749.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-923b130fef18ebf967db9f8c65ad7e9917e03d58.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-ab03e6b9975380f5950aa8f417760c601503d627.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-4dee705671e1258eb9d42dc6e89b7fc413540c8c.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8d3996f869ed857b64bd8dcdf531034cf9bd0c2a.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-3a74d9c435942faccbf20f93b727bd2720ea1299.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="/Users/nickge/Desktop/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-b73d662ce306bec63bb145e04f5860ada3dd4587.jar" />
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-ff9e23bcce9b340b731f0332370d4fea5b5df148.jar" />
     </item>
     <item
-        jar="/Users/nickge/Desktop/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="/Users/nickge/Desktop/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-a70a7cde493f7176dfbdef0c978169d673b5b297.jar" />
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-f53573214c57fad4cd245cfba610aceecb60ea7a.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-367169fc443700b7abbfe5bd072ecad62e7ba551.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-42563412f75d1f7d37ab0ac7f590288c9a6784a5.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-4c50df07ba06eb01aeacdb83b8c8a113569ac738.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.13.0/58a7d54b6a4f28be11f0cecec93097eddf473e6f/parse-android-1.13.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/parse-android-1.13.0-9269b4e55d03f7e0f4ee5dd00f811ed7010fe7de.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-3c6074be36b569d8674bae3d651d93e13662cf45.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-96b39918e98afb219aa72e3e90071132730ff5c4.jar" />
+    </item>
+    <item
+        jar="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-2c05d69919a083b842afa84c7f52cce027cd4c1d.jar" />
     </item>
 
 </items>

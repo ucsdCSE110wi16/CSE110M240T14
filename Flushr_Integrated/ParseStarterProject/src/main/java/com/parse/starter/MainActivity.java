@@ -10,6 +10,8 @@ package com.parse.starter;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -22,10 +24,13 @@ import com.parse.ParseAnalytics;
 
 public class MainActivity extends AppCompatActivity {
 
-
-  private static Button enterButton;
-
   public void redirectUser(View view){
+
+    Intent intent = new Intent(this, MapsActivity.class);
+    startActivity(intent);
+  }
+
+  public void redirec(){
 
     Intent intent = new Intent(this, MapsActivity.class);
     startActivity(intent);
@@ -37,8 +42,15 @@ public class MainActivity extends AppCompatActivity {
     //Intent i = new Intent(this, MapsActivity.class);
     setContentView(R.layout.activity_main);
 
+
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
-    enterButton = (Button)findViewById(R.id.enterButton);
+
+    new Handler().postDelayed(new Runnable() {
+      @Override
+      public void run() {
+        redirec();
+      }
+    }, 3000);
 
   }
 
