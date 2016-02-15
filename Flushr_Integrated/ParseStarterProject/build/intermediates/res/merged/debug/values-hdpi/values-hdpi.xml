@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-hdpi/values-hdpi.xml -->
+    <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-hdpi/values-hdpi.xml -->
     <eat-comment/>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
           <item name="barLength">18.66dp</item>

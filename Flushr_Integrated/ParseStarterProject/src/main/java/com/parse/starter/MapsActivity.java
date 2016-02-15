@@ -22,6 +22,13 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+
+import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements LocationListener {
 
@@ -30,6 +37,9 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
     Button createPageButton, viewWallButton;
     LocationManager locationManager;
     String provider;
+
+    public static Double userLat;
+    public static Double userLng;
 
     public void createPage(View view) {
 
@@ -128,14 +138,48 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
     @Override
     public void onLocationChanged(Location location) {
 
-        Double lat = location.getLatitude();
-        Double lng = location.getLongitude();
+        userLat = location.getLatitude();
+        userLng = location.getLongitude();
+
+        Log.i("latitude", userLat.toString());
+        Log.i("longitude", userLng.toString());
 
         mMap.clear();
 
-        mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lng)).title("Your location"));
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Restroom");
+        /*query.getInBackground("5vsYxUuRI6", new GetCallback<ParseObject>() {
+            @Override
+            public void done(ParseObject object, ParseException e) {
+                if (e == null) {
+                    mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"), object.getDouble("longitude"))).title(String.valueOf(object.get("nameofres"))));
+                    Log.i("get Lat", Double.toString(object.getDouble("latitude")));
+                    Log.i("get Lng", Double.toString(object.getDouble("longitude")));
+                }
+                else {
+                    Log.i("FATAL", "");
+                }
+            }
+        });*/
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null) {
+                    Log.i("Objects found", Integer.toString(objects.size()));
+                    for (ParseObject object : objects) {
+                        Log.i("raw lat", String.valueOf(object.getDouble("latitude")));
+                        mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"), object.getDouble("longitude"))).title(String.valueOf(object.get("nameofres"))));
+                        Log.i("get Lat", Double.toString(object.getDouble("latitude")));
+                        Log.i("get Lng", Double.toString(object.getDouble("longitude")));
+                    }
+                } else {
+                    Log.i("FATAL", "");
+                }
+            }
+        });
 
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(lat, lng), 12));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(userLat, userLng)).title("Your location"));
+
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(userLat, userLng), 12));
 
     }
 

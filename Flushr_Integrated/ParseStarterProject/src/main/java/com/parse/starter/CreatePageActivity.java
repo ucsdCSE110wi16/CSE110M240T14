@@ -107,6 +107,8 @@ public class CreatePageActivity extends AppCompatActivity {
 
 
         // checkFemale.isChecked();
+        restroom.put("latitude", MapsActivity.userLat.doubleValue());
+        restroom.put("longitude", MapsActivity.userLng.doubleValue());
         restroom.put("nameofres", name);
         restroom.put("male", isMale);
         restroom.put("female", isFemale);

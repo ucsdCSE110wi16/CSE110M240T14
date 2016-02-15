@@ -15,15 +15,9 @@
         android:layout_height="match_parent"
         tools:context="com.parse.starter.MapsActivity" />
 
-    <Button android:id="@+id/mapButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Maps" />
 
     <Button android:id="@+id/viewWallButton"
-        android:layout_toRightOf="@id/mapButton"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,10 +30,10 @@
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@id/viewWallButton"
         android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Create"
         android:clickable="true"
         android:onClick="createPage"
         />
-</RelativeLayout><!-- From: file:/Users/QishanWu/Documents/CSE110_project/Flushr_Integrated/ParseStarterProject/src/main/res/layout/activity_maps.xml -->
+</RelativeLayout><!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/src/main/res/layout/activity_maps.xml -->
