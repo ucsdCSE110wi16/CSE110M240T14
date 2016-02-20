@@ -15,6 +15,7 @@ import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -34,7 +35,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
 
     private GoogleMap mMap;
 
-    Button createPageButton, viewWallButton;
+    ImageButton createPageButton, viewWallButton;
     LocationManager locationManager;
     String provider;
 
@@ -69,8 +70,8 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         provider = locationManager.getBestProvider(new Criteria(), false);
 
-        createPageButton = (Button) findViewById(R.id.createPageButton);
-        viewWallButton = (Button) findViewById(R.id.viewWallButton);
+        createPageButton = (ImageButton) findViewById(R.id.createButton);
+        viewWallButton = (ImageButton) findViewById(R.id.drawingWallButton);
 
     }
 
