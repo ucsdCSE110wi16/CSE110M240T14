@@ -130,8 +130,6 @@ public class CreatePageActivity extends AppCompatActivity {
         restroom.put("accessibility", accessibie);
         restroom.put("comment", commentword);
 
-
-
         restroom.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {
