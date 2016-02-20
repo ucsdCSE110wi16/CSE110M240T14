@@ -26,7 +26,7 @@ import java.util.UUID;
 
 import java.util.UUID;
 
-public class ToiletWallActivity extends AppCompatActivity {
+public class ToiletWallActivity extends AppCompatActivity implements View.OnClickListener {
 
     private DrawingView drawView;
 
@@ -42,15 +42,15 @@ public class ToiletWallActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-        /*
+
         //respond to clicks
         if(view.getId()==R.id.drawing){
             //draw button clicked
-           // drawView.setErase(false);
+            drawView.setErase(false);
         }
         else if(view.getId()==R.id.eraser){
             //switch to erase - choose size
-            //drawView.setErase(true);
+            drawView.setErase(true);
         }
         else if(view.getId()==R.id.save){
 
@@ -62,7 +62,7 @@ public class ToiletWallActivity extends AppCompatActivity {
             drawView.destroyDrawingCache();
 
         }
-        */
+
     }
 
     public void paintClicked(View view){
@@ -123,10 +123,10 @@ public class ToiletWallActivity extends AppCompatActivity {
         currPaint = (ImageButton)findViewById(R.id.darkblueColorButton);
 
         eraseBtn = (ImageButton)findViewById(R.id.eraser);
-        //eraseBtn.setOnClickListener(this);
+        eraseBtn.setOnClickListener(this);
 
         saveBtn = (ImageButton)findViewById(R.id.save);
-        //saveBtn.setOnClickListener(this);
+        saveBtn.setOnClickListener(this);
 
         backArrowButton = (ImageButton)findViewById(R.id.backArrowButton);
 

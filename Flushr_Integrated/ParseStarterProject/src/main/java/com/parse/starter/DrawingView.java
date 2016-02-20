@@ -79,8 +79,13 @@ public class DrawingView extends View {
         //canvasBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.brick);
         //canvasBitmap = canvasBitmap.copy(Bitmap.Config.ARGB_8888, true);
         //drawCanvas = new Canvas(canvasBitmap);
+
+
         canvasBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         drawCanvas = new Canvas(canvasBitmap);
+
+        //canvasBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.backarrow);
+        //drawCanvas = new Canvas(canvasBitmap);
     }
 
     @Override

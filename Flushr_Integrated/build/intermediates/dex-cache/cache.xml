@@ -2,235 +2,235 @@
 <items version="2" >
 
     <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8d1456cbbe19f040297fc1b2a4f111eb0b6ca2db.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d3d96350ad0224f70d91c00019b35dcc870a4767.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e53c9e35af177e98be1ac9d8e6e429c621520c7b.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-37bc374aab359279a0d2060bec7eaf7de0dd3c40.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.4.0/jars/classes.jar"
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.4.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-8a9f6010145aa76dbde2e201c2b5d3365cb06619.jar" />
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-9f655de2c451a11f16037922d58cb11b669ad820.jar" />
     </item>
     <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-f297c6ec4670eb1d25ac6d0014907019054b35e3.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-26c42c3e07136419cd7c4582a32c3f6861367f70.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-77af28762ce9090e8db015c4a0e75168ff509ea0.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-36e03d3ea3f0b535d3d5550b70ef7aa9d8fe2045.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-cb564df63cb8b4326a7a69a90b0684614de06e69.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-cefcfad41566690018b5c97dfd6ee24baadfd428.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-c6b6cd281af5da8e255b36113f90e390301b1b11.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-493d54ea2352142ae7626399c800379ec81bd93c.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d008516955380ffab1dfaade3ccf54024f615a6f.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-67b41503b1854690db15c68ffb2958c7266b7bd6.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-30cbca29b308230903b277c3823e226aba2d37dd.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-f3fb08c99dd942f8e4d20e52eabe1c2fb2b95469.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-f62aa7c214117ffa28e8ddba64dd35db8281388d.jar" />
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-47b45388395e65198981c04649f5fdc10942550d.jar" />
     </item>
     <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/jars/classes.jar"
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-91f278e168f55a9fedb4a8290e576dddcb970c30.jar" />
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-aa782b3f23bbefd44fe91f504e362d388a9df8e3.jar" />
     </item>
     <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-258acf86cdc95a23846fea8f702f05c36eb0d15d.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-41074379a4a8e9993174340cf15205f44ba943b9.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-c96c036c0fb8fbac50dfe361692986f214a514d2.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.13.0/58a7d54b6a4f28be11f0cecec93097eddf473e6f/parse-android-1.13.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/parse-android-1.13.0-3daf37596fa5d6c4b746ed6db1ba7e5bcd9fad0f.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-f1e4f6e6ff23c70d568905444ee14d5da41107df.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jar="/Users/Frankie/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-348a1ab931662db797e5263d66f1217dd07bb760.jar" />
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-65424274b13e662d2187da602838415c821f91cb.jar" />
     </item>
     <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="04de44f90606c77f3b28cf44861f306290505aac">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-883e91f531792343d9ab35b23296af0afb639940.jar" />
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-884ee2a0759afcac980a02b350bf8797c41726a8.jar" />
     </item>
     <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/jars/classes.jar"
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.4.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-b02fc3693f4858be53b99a159416e0d38b8b80f4.jar" />
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-0a45b5a9b0737f4a77ddbf4d7b2b33598eefd01b.jar" />
     </item>
     <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.4.0/jars/classes.jar"
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d00e8cd4fd2140f30ae1b076bb6a61094ccbf63f.jar" />
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-b923f779f6f1f6d94809dbb3968d5c22f8f169c0.jar" />
     </item>
     <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-030ae077f424f0de084874a1638b4d38745c75a7.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-9c7d8955bc1a94f14fcd203d69a6142d425e9377.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d7357269ca03572a24280fb8a35cda349e6d94e3.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-740bfa5277fa26aaaa0ddae921b6990cd748a1e2.jar" />
-    </item>
-    <item
-        jar="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
-        <dex dex="/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d1488e8540f42230d604a0ec2111627071190997.jar" />
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-c9c2ef6e321ea70b44290e515c1a95dbebc60f19.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-187f007a4f8c02c23d5d15cd7110c4925d6a7953.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-12286449563291dbb14abfe959248685144ebea1.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-8114685da05c4a00c6843fdbe13db26bad4ca5ce.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-5bbe4b61c6333f680549e97e66132346abf834b8.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-ed451a3b963df7395a2e9ea4728cc5c9690a4f8c.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-6c530636a486b62cf9a5655664b0be9dbd092640.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-5a4a753996b399aebb64e942db2fc0ca4e8dac63.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-3b0abe848b0636d9be35e8bd4d01479483194efc.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-2a77c2ec6f18619e813d8c0f7847cda41f87aa9a.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-981354f347e746f733e362028635574c2fac7364.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-9a583cf6656c2f290312525d595ce59881ce3139.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-917849737d5dc60d5caedbe67ac9704ce3476ff6.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-4c0b316e2edc26938108d53efe96b1397611fce3.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-36d7e58b738ca5a8c30e3f3a37d15bfa6c300a56.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-121873f68f77b739d013671429d7bca89ddc922e.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-beac98eb13f567205e356f48c6eee1b761086fd4.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-fda7f9a342b176eded3128c0a5ec90679705348a.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-e4b7744b59157f74d6a41ae940e63f8dee89aef4.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-4f6b2fd0f7efda3750302b093867835c8e07d1e5.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-cecadc2fcf173393623b0a35e93634b2ffc15525.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.13.0/58a7d54b6a4f28be11f0cecec93097eddf473e6f/parse-android-1.13.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/parse-android-1.13.0-67569be52d2935a348afc5e0515d82c8c5dc6185.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-2cbc29ab7c89be55a9518962df9d218c89bed2b2.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-677273cfee37bfcaf3a15bcc456e9286698284f2.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-d5c54a23d75d5dfe907a3f85cf8d80c8cb4d98c9.jar" />
+    </item>
+    <item
+        jar="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-5a32c82b140b4653a4ffcc5425ed2b0b899fe5a8.jar" />
     </item>
 
 </items>

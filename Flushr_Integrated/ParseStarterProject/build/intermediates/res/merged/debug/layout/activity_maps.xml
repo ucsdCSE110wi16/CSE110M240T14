@@ -36,4 +36,4 @@
         android:clickable="true"
         android:onClick="createPage"
         />
-</RelativeLayout><!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/src/main/res/layout/activity_maps.xml -->
+</RelativeLayout><!-- From: file:/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/src/main/res/layout/activity_maps.xml -->
