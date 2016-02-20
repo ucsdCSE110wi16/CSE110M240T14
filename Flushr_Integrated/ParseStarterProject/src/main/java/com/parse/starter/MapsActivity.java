@@ -8,6 +8,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -25,9 +27,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.parse.FindCallback;
 import com.parse.GetCallback;
+import com.parse.ParseACL;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.SaveCallback;
 
 import java.util.List;
 
@@ -147,20 +151,28 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
 
         mMap.clear();
 
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Restroom");
-        /*query.getInBackground("5vsYxUuRI6", new GetCallback<ParseObject>() {
+
+        ParseObject restroom = new ParseObject("test");
+        restroom.put("latitude", "test");
+        restroom.saveInBackground(new SaveCallback() {
             @Override
-            public void done(ParseObject object, ParseException e) {
+            public void done(ParseException e) {
                 if (e == null) {
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"), object.getDouble("longitude"))).title(String.valueOf(object.get("nameofres"))));
-                    Log.i("get Lat", Double.toString(object.getDouble("latitude")));
-                    Log.i("get Lng", Double.toString(object.getDouble("longitude")));
-                }
-                else {
-                    Log.i("FATAL", "");
+                    Toast.makeText(MapsActivity.this, "A new restroom has been created", Toast.LENGTH_SHORT).show();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                        }
+                    }, 2000);
+                } else {
+                    Toast.makeText(MapsActivity.this, "There were an error, please try again", Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
                 }
             }
-        });*/
+        });
+
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Restroom");
+
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
             public void done(List<ParseObject> objects, ParseException e) {
@@ -175,6 +187,9 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
                 } else {
                     Log.i("FATAL", "");
                 }
+
+
+
             }
         });
 

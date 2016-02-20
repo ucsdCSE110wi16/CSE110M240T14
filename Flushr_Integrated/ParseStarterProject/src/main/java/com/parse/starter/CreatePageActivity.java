@@ -20,8 +20,18 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseACL;
 import com.parse.ParseException;
 import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.SaveCallback;
 
 public class CreatePageActivity extends AppCompatActivity {
@@ -34,6 +44,7 @@ public class CreatePageActivity extends AppCompatActivity {
     private EditText nameOfRestaurant;
 
     ParseObject restroom = new ParseObject("Restroom");
+
 
     private float rating;
 
@@ -105,6 +116,9 @@ public class CreatePageActivity extends AppCompatActivity {
             return;
         }
 
+        ParseACL acl = new ParseACL();
+        acl.setPublicReadAccess(true);
+        restroom.setACL(acl);
 
         // checkFemale.isChecked();
         restroom.put("latitude", MapsActivity.userLat.doubleValue());

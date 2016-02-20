@@ -15,25 +15,36 @@
         android:layout_height="match_parent"
         tools:context="com.parse.starter.MapsActivity" />
 
-
-    <Button android:id="@+id/viewWallButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wall"
-        android:clickable="true"
-        android:onClick="viewWall"
-        />
-
-    <Button android:id="@+id/createPageButton"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/viewWallButton"
         android:layout_alignParentBottom="true"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Create"
-        android:clickable="true"
-        android:onClick="createPage"
-        />
-</RelativeLayout><!-- From: file:/Users/Frankie/CSE110/CSE110M240T14/Flushr_Integrated/ParseStarterProject/src/main/res/layout/activity_maps.xml -->
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/createButton"
+            android:src="@drawable/createbutton"
+            android:layout_marginRight="0dp"
+            android:layout_marginEnd="64dp"
+            android:layout_alignBottom="@+id/drawingWallButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="createPage"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawingWallButton"
+            android:src="@drawable/drawingwallbutton"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/createButton"
+            android:layout_toStartOf="@+id/createButton"
+            android:onClick="viewWall"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/ParseStarterProject/src/main/res/layout/activity_maps.xml -->
