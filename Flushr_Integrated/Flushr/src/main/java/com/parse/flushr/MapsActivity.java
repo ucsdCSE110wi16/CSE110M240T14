@@ -156,7 +156,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
                     for (ParseObject object : objects) {
                         mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"),
                                 object.getDouble("longitude"))).title(String.valueOf(object.get("nameofres")))
-                                .snippet(String.valueOf(object.getObjectId())));
+                                .snippet(object.getObjectId()));
                     }
                 } else {
                     Log.i("FATAL", "");
@@ -173,7 +173,6 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
-                marker.showInfoWindow();
                 markerID = marker.getSnippet();
                 Log.i("Marker2", markerID);
                 getIntoInfo();
