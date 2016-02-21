@@ -14,6 +14,7 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -24,6 +25,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.parse.FindCallback;
 import com.parse.GetCallback;
@@ -35,13 +37,15 @@ import com.parse.SaveCallback;
 
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements LocationListener {
+public class MapsActivity extends FragmentActivity implements LocationListener, GoogleMap.OnMarkerClickListener {
 
     private GoogleMap mMap;
 
     ImageButton createPageButton, viewWallButton;
     LocationManager locationManager;
     String provider;
+
+    public static String markerID;
 
     public static Double userLat;
     public static Double userLng;
@@ -151,26 +155,6 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
 
         mMap.clear();
 
-
-        ParseObject restroom = new ParseObject("test");
-        restroom.put("latitude", "test");
-        restroom.saveInBackground(new SaveCallback() {
-            @Override
-            public void done(ParseException e) {
-                if (e == null) {
-                    Toast.makeText(MapsActivity.this, "A new restroom has been created", Toast.LENGTH_SHORT).show();
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                        }
-                    }, 2000);
-                } else {
-                    Toast.makeText(MapsActivity.this, "There were an error, please try again", Toast.LENGTH_SHORT).show();
-                    e.printStackTrace();
-                }
-            }
-        });
-
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Restroom");
 
         query.findInBackground(new FindCallback<ParseObject>() {
@@ -179,23 +163,32 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
                 if (e == null) {
                     Log.i("Objects found", Integer.toString(objects.size()));
                     for (ParseObject object : objects) {
-                        Log.i("raw lat", String.valueOf(object.getDouble("latitude")));
-                        mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"), object.getDouble("longitude"))).title(String.valueOf(object.get("nameofres"))));
-                        Log.i("get Lat", Double.toString(object.getDouble("latitude")));
-                        Log.i("get Lng", Double.toString(object.getDouble("longitude")));
+                        mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"),
+                                object.getDouble("longitude"))).title(String.valueOf(object.get("nameofres")))
+                                .snippet(String.valueOf(object.getObjectId())));
                     }
                 } else {
                     Log.i("FATAL", "");
                 }
 
-
-
             }
         });
+
 
         mMap.addMarker(new MarkerOptions().position(new LatLng(userLat, userLng)).title("Your location"));
 
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(userLat, userLng), 12));
+
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                marker.showInfoWindow();
+                markerID = marker.getSnippet();
+                Log.i("Marker2", markerID);
+                getIntoInfo();
+                return true;
+            }
+        });
 
     }
 
@@ -217,7 +210,9 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
     @Override
     public void onPause() {
         super.onPause();
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
+                PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -228,5 +223,21 @@ public class MapsActivity extends FragmentActivity implements LocationListener {
             return;
         }
         locationManager.removeUpdates(this);
+    }
+
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        Log.i("Marker", "Marked clicked");
+        return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
+
+    public void getIntoInfo(){
+        Intent i = new Intent(this, RestroomInfoActivity.class);
+        startActivity(i);
     }
 }
