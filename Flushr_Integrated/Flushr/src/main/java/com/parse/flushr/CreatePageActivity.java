@@ -108,6 +108,7 @@ public class CreatePageActivity extends AppCompatActivity {
 
         ParseACL acl = new ParseACL();
         acl.setPublicReadAccess(true);
+        acl.setPublicWriteAccess(true);
         restroom.setACL(acl);
 
         // checkFemale.isChecked();

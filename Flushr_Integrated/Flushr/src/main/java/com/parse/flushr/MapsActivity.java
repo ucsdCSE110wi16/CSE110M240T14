@@ -32,7 +32,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
     private GoogleMap mMap;
 
-    ImageButton createPageButton, viewWallButton;
+    ImageButton createPageButton;
     LocationManager locationManager;
     String provider;
 
@@ -44,14 +44,6 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
     public void createPage(View view) {
 
         Intent intent = new Intent(this, CreatePageActivity.class);
-        startActivity(intent);
-
-    }
-
-
-    public void viewWall(View view) {
-
-        Intent intent = new Intent(this, ToiletWallActivity.class);
         startActivity(intent);
 
     }
@@ -70,7 +62,6 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         provider = locationManager.getBestProvider(new Criteria(), false);
 
         createPageButton = (ImageButton) findViewById(R.id.createButton);
-        viewWallButton = (ImageButton) findViewById(R.id.drawingWallButton);
 
     }
 
@@ -145,6 +136,17 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         Log.i("longitude", userLng.toString());
 
         mMap.clear();
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        mMap.setMyLocationEnabled(true);
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Restroom");
 
@@ -166,7 +168,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         });
 
 
-        mMap.addMarker(new MarkerOptions().position(new LatLng(userLat, userLng)).title("Your location"));
+        //mMap.addMarker(new MarkerOptions().position(new LatLng(userLat, userLng)).title("Your location"));
 
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(userLat, userLng), 12));
 
