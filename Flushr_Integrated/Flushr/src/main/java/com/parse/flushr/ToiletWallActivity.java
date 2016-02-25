@@ -1,12 +1,28 @@
 package com.parse.flushr;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.util.List;
 import java.util.UUID;
 
 public class ToiletWallActivity extends AppCompatActivity implements View.OnClickListener {
@@ -17,12 +33,8 @@ public class ToiletWallActivity extends AppCompatActivity implements View.OnClic
     private ImageButton darkblueBtn, greenBtn, grayBtn, orangeBtn, redBtn, yellowBtn;
 
     boolean colorPalletisOpen = false;
-
-
-    public void backToMap(View view){
-        Intent intent = new Intent(this, MapsActivity.class);
-        startActivity(intent);
-    }
+    static ParseFile file;
+    static Boolean hasWall;
 
     public void onClick(View view){
 
@@ -39,9 +51,29 @@ public class ToiletWallActivity extends AppCompatActivity implements View.OnClic
 
             //save drawing
             drawView.setDrawingCacheEnabled(true);
-            String imgSaved = MediaStore.Images.Media.insertImage(
+            /*String imgSaved = MediaStore.Images.Media.insertImage(
                     getContentResolver(), drawView.getDrawingCache(),
-                    UUID.randomUUID().toString()+".png", "drawing");
+                    UUID.randomUUID().toString()+".png", "drawing");*/
+            ByteArrayOutputStream output = new ByteArrayOutputStream();
+            Bitmap map = drawView.getDrawingCache();
+            map.compress(Bitmap.CompressFormat.PNG, 100, output);
+            byte[] b = output.toByteArray();
+
+            file = new ParseFile("wall.png", b);
+            file.saveInBackground();
+            Log.i("ParseFile", "PNG saved on Parse.");
+
+            ParseQuery<ParseObject> q = ParseQuery.getQuery("Restroom");
+            q.getInBackground(MapsActivity.markerID, new GetCallback<ParseObject>() {
+                @Override
+                public void done(ParseObject object, ParseException e) {
+                    object.put("wall", file);
+                    object.put("hasWall", new Boolean(true));
+                    object.saveInBackground();
+                    Log.i("ParseFile", "Picture associated with restroom.");
+                }
+            });
+
             drawView.destroyDrawingCache();
 
         }
@@ -102,7 +134,38 @@ public class ToiletWallActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toilet_wall);
 
-        drawView = (DrawingView)findViewById(R.id.drawing);
+
+        /*ParseQuery<ParseObject> q = ParseQuery.getQuery("Restroom");
+        q.getInBackground(MapsActivity.markerID, new GetCallback<ParseObject>() {
+            @Override
+            public void done(ParseObject object, ParseException e) {
+                hasWall = object.getBoolean("hasWall");
+                if (hasWall) {
+                    file = object.getParseFile("wall.png");
+                    Log.i("ParseFile", "Previous wall detected.");
+                }
+                Log.i("ParseFile", "No wall found.");
+            }
+        });
+
+        if (hasWall){
+            try {
+                byte[] b = file.getData();
+                Bitmap store = BitmapFactory.decodeByteArray(b, 0, b.length);
+                store = store.copy(Bitmap.Config.ARGB_8888, true);
+                BitmapDrawable drawable_map = new BitmapDrawable(getResources(), store);
+                drawView.setBackground(drawable_map);
+                Log.i("RestroomWall", "Previous wall loaded.");
+
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }*/
+
+
+        //else
+            drawView = (DrawingView)findViewById(R.id.drawing);
+
         currPaint = (ImageButton)findViewById(R.id.darkblueColorButton);
 
         eraseBtn = (ImageButton)findViewById(R.id.eraser);
@@ -110,8 +173,6 @@ public class ToiletWallActivity extends AppCompatActivity implements View.OnClic
 
         saveBtn = (ImageButton)findViewById(R.id.save);
         saveBtn.setOnClickListener(this);
-
-        backArrowButton = (ImageButton)findViewById(R.id.backArrowButton);
 
     }
 

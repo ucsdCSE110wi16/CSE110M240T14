@@ -26,14 +26,6 @@
 
             <ImageButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/backArrowButton"
-                android:src="@drawable/backarrow"
-                android:onClick="backToMap"
-                android:nestedScrollingEnabled="false" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:id="@+id/eraser"
                 android:src="@drawable/eraser" />

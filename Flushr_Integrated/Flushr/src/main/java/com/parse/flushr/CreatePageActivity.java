@@ -121,6 +121,7 @@ public class CreatePageActivity extends AppCompatActivity {
         restroom.put("accessibility", accessibie);
         restroom.put("comment", commentword);
         restroom.put("numberOfRates", new Integer(1));
+        restroom.put("hasWall", new Boolean(false));
 
         restroom.saveInBackground(new SaveCallback() {
             @Override

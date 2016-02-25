@@ -107,13 +107,13 @@ public class RestroomInfoActivity extends AppCompatActivity {
 
             }
         });
-
+/*
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             LayerDrawable stars = (LayerDrawable) toiletRatingBar.getProgressDrawable();
             stars.getDrawable(2).setColorFilter(ContextCompat.getColor(this, R.color.yellow), PorterDuff.Mode.SRC_ATOP);
             stars.getDrawable(1).setColorFilter(ContextCompat.getColor(this, R.color.yellow), PorterDuff.Mode.SRC_ATOP);
         }
-
+*/
         /*
         Log.i("RATING", new Double(rating).toString());
         double newRating = 0; //CHANGE THIS!!!
