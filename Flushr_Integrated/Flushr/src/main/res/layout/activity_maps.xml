@@ -27,4 +27,15 @@
         android:onClick="createPage"
         android:clickable="true"/>
 
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/helper"
+        android:onClick="openurl"
+        />
+
 </RelativeLayout>
+

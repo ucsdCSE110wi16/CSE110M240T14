@@ -9,7 +9,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.parse.flushr.CreatePageActivity"
     android:background="#ffffff"
-    >
+    android:minHeight="60dp"
+    android:minWidth="100dp">
 
 
     <android.support.design.widget.TextInputLayout
@@ -141,26 +142,18 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-
-
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/submitButton"
         android:src="@drawable/ic_send_black"
+        android:onClick="submit"
         android:layout_alignParentBottom="true"
-        android:onClick="submit" />
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/cancelButton"
+        android:layout_toRightOf="@+id/ratingBar"
+        android:layout_below="@+id/commentBox"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:onClick="cancelFuntion"
-        android:src="@drawable/ic_cancel_black"
-        />
-
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp" />
 
 
 </RelativeLayout>

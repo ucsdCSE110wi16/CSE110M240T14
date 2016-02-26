@@ -326,6 +326,10 @@
     <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="mr_media_route_controller_art_max_height">320dp</dimen>
+    <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
@@ -343,6 +347,14 @@
     <dimen name="place_autocomplete_progress_horizontal_margin">16dp</dimen>
     <dimen name="place_autocomplete_progress_size">24dp</dimen>
     <dimen name="place_autocomplete_separator_start">72dp</dimen>
+    <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/src/main/res/values/drawables.xml -->
+    <eat-comment/>
+    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
+    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_slideshow" type="drawable">@android:drawable/ic_menu_slideshow</item>
     <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
@@ -498,6 +510,8 @@
     <string name="mr_user_route_category_name">Devices</string>
     <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="parse_app_id">EvFJCkrPw0Cau5LUOEkhQlYqrwpAz3p033cwKd4a</string>
     <string name="parse_client_key">ep1rVvl01APJImENzR3ac9YhdD3tHIXVLL8jWIyK</string>
     <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/values/location_strings.xml -->
@@ -514,6 +528,7 @@
     <!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_create_page">CreatePageActivity</string>
+    <string name="title_activity_helper_page">HelperPageActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_toilet_wall">ToiletWallActivity</string>

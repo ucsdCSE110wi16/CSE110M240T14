@@ -8,6 +8,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -70,7 +71,9 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         super.onResume();
         setUpMapIfNeeded();
 
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
+                PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -83,6 +86,12 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         locationManager.requestLocationUpdates(provider, 400, 1, this);
     }
 
+
+    public void openurl(View view) {
+        Uri uri = Uri.parse("https://codemancer.co.uk/2016/02/flushr-how-to-use/"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
 
     private void setUpMapIfNeeded() {
         // Do a null check to confirm that we have not already instantiated the map.
@@ -98,32 +107,21 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
     }
 
     private void setUpMap() {
-
-    }
-
-    public void onMapReady(GoogleMap googleMap) {
-//        mMap = googleMap;
-//
-//        // Add a marker in Sydney and move the camera
-////        LatLng sydney = new LatLng(-34, 151);
-////        mMap.addMarker(new MarkerOptions().position(new LatLng(51.513892, -0.1000887)).title("St Paul's"));
-////        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(51.513892, -0.1000887), 15));
-//
-//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-//            // TODO: Consider calling
-//            //    ActivityCompat#requestPermissions
-//            // here to request the missing permissions, and then overriding
-//            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-//            //                                          int[] grantResults)
-//            // to handle the case where the user grants the permission. See the documentation
-//            // for ActivityCompat#requestPermissions for more details.
-//            mMap.setMyLocationEnabled(true);
-//        }
-//        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-//        mMap.setTrafficEnabled(true);
-//        mMap.setIndoorEnabled(true);
-//        mMap.setBuildingsEnabled(true);
-//        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.clear();
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
+                PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        mMap.setMyLocationEnabled(true);
+        mMap.getUiSettings().setZoomControlsEnabled(true);
     }
 
     @Override
@@ -135,19 +133,6 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         Log.i("latitude", userLat.toString());
         Log.i("longitude", userLng.toString());
 
-        mMap.clear();
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        mMap.setMyLocationEnabled(true);
-
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Restroom");
 
         query.findInBackground(new FindCallback<ParseObject>() {
@@ -157,7 +142,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
                     Log.i("Objects found", Integer.toString(objects.size()));
                     for (ParseObject object : objects) {
                         mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"),
-                                object.getDouble("longitude"))).title(String.valueOf(object.get("nameofres")))
+                                object.getDouble("longitude"))).title(object.getString("nameofres"))
                                 .snippet(object.getObjectId()));
                     }
                 } else {
@@ -167,8 +152,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
             }
         });
 
-
-        //mMap.addMarker(new MarkerOptions().position(new LatLng(userLat, userLng)).title("Your location"));
+        setUpMap();
 
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(userLat, userLng), 12));
 
@@ -176,8 +160,8 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
             @Override
             public boolean onMarkerClick(Marker marker) {
                 markerID = marker.getSnippet();
-                Log.i("Marker2", markerID);
-                getIntoInfo();
+                Log.i("Marker/objectID", markerID);
+                goRestroomInfo();
                 return true;
             }
         });
@@ -219,7 +203,6 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
     @Override
     public boolean onMarkerClick(Marker marker) {
-        Log.i("Marker", "Marked clicked");
         return false;
     }
 
@@ -228,7 +211,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         moveTaskToBack(true);
     }
 
-    public void getIntoInfo(){
+    public void goRestroomInfo(){
         Intent i = new Intent(this, RestroomInfoActivity.class);
         startActivity(i);
     }

@@ -142,13 +142,22 @@ android:background="#ffffff">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/drawingWallButton"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:src="@drawable/drawingwallbutton"
         android:paddingBottom="30dp"
         android:background="@android:color/transparent"
         android:onClick="viewWall"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:layout_below="@+id/commentBoxInfo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paint your thoughts here"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

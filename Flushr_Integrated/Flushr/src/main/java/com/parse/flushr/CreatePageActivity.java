@@ -58,10 +58,6 @@ public class CreatePageActivity extends AppCompatActivity {
         left.setColorFilter(ContextCompat.getColor(this, R.color.blue), PorterDuff.Mode.SRC_ATOP);
         checkAccessibility.setCompoundDrawablesWithIntrinsicBounds(left, null, null, null);
 
-        // update send and cancel buttons color
-        cancelButton.setColorFilter(ContextCompat.getColor(this, R.color.gray));
-        submitButton.setColorFilter(ContextCompat.getColor(this, R.color.gray));
-
         // action send
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,11 +138,8 @@ public class CreatePageActivity extends AppCompatActivity {
         });
     }
 
-
     private void backtoMap(){
-
-        Intent intent = new Intent(this, MapsActivity.class);
-        startActivity(intent);
+        super.onBackPressed();
     }
 
 
@@ -160,7 +153,6 @@ public class CreatePageActivity extends AppCompatActivity {
     private void retrieveComponents() {
         nameOfRestaurant = (EditText)findViewById(R.id.nameofres);
         ratingBar = (RatingBar) findViewById(R.id.ratingBar);
-        cancelButton = (ImageView)findViewById(R.id.cancelButton);
         checkMale = (CheckBox) findViewById(R.id.checkMale);
         checkFemale = (CheckBox) findViewById(R.id.checkFemale);
         comment = (EditText) findViewById(R.id.commentBox);

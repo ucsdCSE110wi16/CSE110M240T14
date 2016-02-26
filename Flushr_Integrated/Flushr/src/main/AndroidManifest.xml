@@ -27,7 +27,7 @@
     <application
         android:name=".StarterApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/flushricon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <meta-data
@@ -74,6 +74,10 @@
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RestroomInfoActivity" />
+        <activity
+            android:name=".HelperPageActivity"
+            android:label="@string/title_activity_helper_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

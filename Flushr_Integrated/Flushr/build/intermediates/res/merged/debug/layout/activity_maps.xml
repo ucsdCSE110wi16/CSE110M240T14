@@ -27,4 +27,16 @@
         android:onClick="createPage"
         android:clickable="true"/>
 
-</RelativeLayout><!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/src/main/res/layout/activity_maps.xml -->
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/helper"
+        android:onClick="openurl"
+        />
+
+</RelativeLayout>
+
+<!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/src/main/res/layout/activity_maps.xml -->

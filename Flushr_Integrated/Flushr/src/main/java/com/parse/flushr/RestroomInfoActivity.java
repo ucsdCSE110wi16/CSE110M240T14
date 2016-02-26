@@ -24,15 +24,16 @@ public class RestroomInfoActivity extends AppCompatActivity {
 
     String nameOfRestroom;
     String comment;
-    double rating;
-    double numberOfRates;
+    static float rating;
+    static int numberOfRates;
     Boolean male, female, accessbility;
     EditText nameOfRestroomInfo;
     CheckBox checkMale, checkFemale, checkAccess;
     RatingBar toiletRatingBar;
     TextView commentBox;
     ImageButton drawingWallButton;
-    double newRatingToSave;
+    static float newRating;
+    static double newRatingToSave;
 
 
     public void viewWall(View view) {
@@ -57,56 +58,70 @@ public class RestroomInfoActivity extends AppCompatActivity {
                 if (e == null) {
                     nameOfRestroom = object.getString("nameOfRestroom");
                     comment = object.getString("comment");
-                    rating = object.getDouble("rating");
-                    numberOfRates = object.getDouble("numberOfRates");
+                    rating = (float) object.getDouble("rating");
+                    numberOfRates = object.getInt("numberOfRates");
+                    System.out.println("Rating, numberOfRates fetched " + numberOfRates);
                     male = object.getBoolean("male");
                     female = object.getBoolean("female");
                     accessbility = object.getBoolean("accessbility");
 
-                    nameOfRestroomInfo = (EditText)findViewById(R.id.nameofresInfo);
+                    nameOfRestroomInfo = (EditText) findViewById(R.id.nameofresInfo);
                     nameOfRestroomInfo.setText(nameOfRestroom);
                     nameOfRestroomInfo.setClickable(false);
 
-                    checkMale = (CheckBox)findViewById(R.id.checkMaleInfo);
+                    checkMale = (CheckBox) findViewById(R.id.checkMaleInfo);
                     checkMale.setClickable(false);
-                    checkFemale = (CheckBox)findViewById(R.id.checkFemaleInfo);
+                    checkFemale = (CheckBox) findViewById(R.id.checkFemaleInfo);
                     checkFemale.setClickable(false);
-                    checkAccess = (CheckBox)findViewById(R.id.checkAccessInfo);
+                    checkAccess = (CheckBox) findViewById(R.id.checkAccessInfo);
                     checkAccess.setClickable(false);
 
-                    if(male){
+                    if (male) {
                         checkMale.setChecked(true);
                     }
 
-                    if(female){
+                    if (female) {
                         checkFemale.setChecked(true);
                     }
 
-                    if(accessbility) {
+                    if (accessbility) {
                         checkAccess.setChecked(true);
                     }
 
-                    toiletRatingBar = (RatingBar)findViewById(R.id.ratingBarInfo);
+                    toiletRatingBar = (RatingBar) findViewById(R.id.ratingBarInfo);
                     toiletRatingBar.setClickable(false);
                     toiletRatingBar.setRating((float) rating);
+                    setEverythingAboutRating(rating, numberOfRates);
 
-
-                    commentBox = (TextView)findViewById(R.id.commentBoxInfo);
+                    commentBox = (TextView) findViewById(R.id.commentBoxInfo);
                     commentBox.setClickable(false);
                     commentBox.setText(comment);
 
-
-
+                    toiletRatingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+                        @Override
+                        public void onRatingChanged(RatingBar toiletRatingBar, float newRating, boolean fromUser) {
+                            // rating
+                            setBarColor();
+                            newRating = newRating;
+                            Log.i("Rating", "Get new rating " + newRating);
+                            System.out.println("Rating, numberOfRates used " + numberOfRates);
+                            double newRatingToSaveP = (numberOfRates * rating + newRating) / (numberOfRates + 1);
+                            Log.i("Rating", "Generated updated rating: " + newRatingToSaveP);
+                            toiletRatingBar.setClickable(false);
+                            saveNewRating(newRatingToSaveP);
+                        }
+                    });
 
                 } else {
                     Log.i("FATAL", "Restroom Info Activity");
                 }
 
-
-
-
             }
-        });
+        });//end of query
+
+
+
+
 /*
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             LayerDrawable stars = (LayerDrawable) toiletRatingBar.getProgressDrawable();
@@ -129,5 +144,27 @@ public class RestroomInfoActivity extends AppCompatActivity {
             }
         });
         */
+    }
+    private void saveNewRating(double newRatingToSaveP){
+        ParseQuery query = ParseQuery.getQuery("Restroom");
+        this.newRatingToSave = newRatingToSaveP;
+        query.getInBackground(MapsActivity.markerID, new GetCallback<ParseObject>() {
+            @Override
+            public void done(ParseObject object, ParseException e) {
+                object.put("numberOfRates", new Integer(numberOfRates + 1));
+                object.put("rating", new Double(newRatingToSave));
+                Log.i("Rating", "Saved updated rating: " + newRatingToSave);
+                object.saveInBackground();
+            }
+        });
+    }
+    private void setBarColor(){
+        LayerDrawable stars = (LayerDrawable) toiletRatingBar.getProgressDrawable();
+        stars.getDrawable(2).setColorFilter(ContextCompat.getColor(this, R.color.yellow), PorterDuff.Mode.SRC_ATOP);
+        stars.getDrawable(1).setColorFilter(ContextCompat.getColor(this, R.color.yellow), PorterDuff.Mode.SRC_ATOP);
+    }
+    private void setEverythingAboutRating(float ratingP, int numberOfRatesP){
+        this.rating = ratingP;
+        this.numberOfRates = numberOfRatesP;
     }
 }
