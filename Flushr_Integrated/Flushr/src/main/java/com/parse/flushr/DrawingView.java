@@ -7,6 +7,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
+import android.media.Image;
 import android.util.AttributeSet;
 import android.view.View;
 import android.graphics.Bitmap;
@@ -19,7 +20,7 @@ import android.widget.ImageView;
 /**
  * Created by abc on 1/28/16.
  */
-public class DrawingView extends View {
+public class DrawingView extends ImageView {
     //drawing path
     private Path drawPath;
     //drawing and canvas paint

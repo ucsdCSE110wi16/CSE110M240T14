@@ -2820,6 +2820,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0d007e;
         public static final int action_mode_bar_stub=0x7f0d007d;
         public static final int action_mode_close_button=0x7f0d0063;
+        public static final int action_settings=0x7f0d00e3;
         public static final int activity_chooser_view_content=0x7f0d0064;
         public static final int adjust_height=0x7f0d0034;
         public static final int adjust_width=0x7f0d0035;
@@ -3108,6 +3109,9 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f04003e;
         public static final int select_dialog_singlechoice_material=0x7f04003f;
         public static final int support_simple_spinner_dropdown_item=0x7f040040;
+    }
+    public static final class menu {
+        public static final int menu_main=0x7f0e0000;
     }
     public static final class mipmap {
         public static final int ic_accessability=0x7f030000;

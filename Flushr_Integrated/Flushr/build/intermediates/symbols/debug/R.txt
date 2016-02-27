@@ -793,6 +793,7 @@ int id action_menu_presenter 0x7f0d0003
 int id action_mode_bar 0x7f0d007e
 int id action_mode_bar_stub 0x7f0d007d
 int id action_mode_close_button 0x7f0d0063
+int id action_settings 0x7f0d00e3
 int id activity_chooser_view_content 0x7f0d0064
 int id adjust_height 0x7f0d0034
 int id adjust_width 0x7f0d0035
@@ -1077,6 +1078,7 @@ int layout select_dialog_item_material 0x7f04003d
 int layout select_dialog_multichoice_material 0x7f04003e
 int layout select_dialog_singlechoice_material 0x7f04003f
 int layout support_simple_spinner_dropdown_item 0x7f040040
+int menu menu_main 0x7f0e0000
 int mipmap ic_accessability 0x7f030000
 int mipmap ic_launcher 0x7f030001
 int raw gtm_analytics 0x7f060000
