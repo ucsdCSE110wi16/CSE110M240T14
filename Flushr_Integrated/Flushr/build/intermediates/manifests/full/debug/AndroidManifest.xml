@@ -87,10 +87,6 @@
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.parse.flushr.RestroomInfoActivity" />
-        <activity
-            android:name="com.parse.flushr.HelperPageActivity"
-            android:label="@string/title_activity_helper_page"
-            android:theme="@style/AppTheme.NoActionBar" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

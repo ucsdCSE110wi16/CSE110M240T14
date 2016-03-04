@@ -19,6 +19,7 @@ import android.widget.ImageButton;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -143,7 +144,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
                     for (ParseObject object : objects) {
                         mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"),
                                 object.getDouble("longitude"))).title(object.getString("nameofres"))
-                                .snippet(object.getObjectId()));
+                                .snippet(object.getObjectId()).icon(BitmapDescriptorFactory.fromResource(R.drawable.restroom_marker)));
                     }
                 } else {
                     Log.i("FATAL", "");

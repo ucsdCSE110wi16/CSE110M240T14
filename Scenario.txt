@@ -1,0 +1,22 @@
+﻿Scenario 
+
+
+1. 
+Given I open the app FlushR
+and I want to create a restroom at a location
+when I click on the location
+then there will be a page pop up allowed me to create the restroom
+
+
+2.
+Given I am in the creating restroom page
+when I don’t fill anything in the page
+and I click submit button on the page
+then there will be a pop-up shows I need to fill out the page before submit it
+
+
+3.
+Given I am in the creating restroom page
+and this restroom is a transgender restroom
+when I click on the checkbox of transgender
+then the checkbox is showed with a check sign

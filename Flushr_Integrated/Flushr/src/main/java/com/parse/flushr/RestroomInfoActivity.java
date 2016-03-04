@@ -26,9 +26,9 @@ public class RestroomInfoActivity extends AppCompatActivity {
     String comment;
     static float rating;
     static int numberOfRates;
-    Boolean male, female, accessbility;
+    Boolean male, female, accessbility, transgender;
     EditText nameOfRestroomInfo;
-    CheckBox checkMale, checkFemale, checkAccess;
+    CheckBox checkMale, checkFemale, checkAccess, checkTrans;
     RatingBar toiletRatingBar;
     TextView commentBox;
     ImageButton drawingWallButton;
@@ -64,6 +64,7 @@ public class RestroomInfoActivity extends AppCompatActivity {
                     male = object.getBoolean("male");
                     female = object.getBoolean("female");
                     accessbility = object.getBoolean("accessbility");
+                    transgender = object.getBoolean("transgender");
 
                     nameOfRestroomInfo = (EditText) findViewById(R.id.nameofresInfo);
                     nameOfRestroomInfo.setText(nameOfRestroom);
@@ -75,6 +76,8 @@ public class RestroomInfoActivity extends AppCompatActivity {
                     checkFemale.setClickable(false);
                     checkAccess = (CheckBox) findViewById(R.id.checkAccessInfo);
                     checkAccess.setClickable(false);
+                    checkTrans = (CheckBox) findViewById(R.id.checkTransInfo);
+                    checkTrans.setClickable(false);
 
                     if (male) {
                         checkMale.setChecked(true);
@@ -87,6 +90,10 @@ public class RestroomInfoActivity extends AppCompatActivity {
                     if (accessbility) {
                         checkAccess.setChecked(true);
                     }
+                    if(transgender){
+                        checkAccess.setChecked(true);
+                    }
+
 
                     toiletRatingBar = (RatingBar) findViewById(R.id.ratingBarInfo);
                     toiletRatingBar.setClickable(false);

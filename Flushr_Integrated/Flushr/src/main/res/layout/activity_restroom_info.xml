@@ -93,6 +93,16 @@ android:background="#ffffff">
     android:layout_alignParentLeft="true"
     android:checked="false" />
 
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Transgender"
+    android:id="@+id/checkTransInfo"
+    android:layout_below="@+id/checkFemaleInfo"
+    android:layout_alignLeft="@+id/checkFemaleInfo"
+    android:layout_alignStart="@+id/checkFemaleInfo"
+    android:checked="false" />
+
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

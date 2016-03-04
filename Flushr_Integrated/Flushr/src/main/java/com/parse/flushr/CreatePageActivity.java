@@ -29,7 +29,7 @@ public class CreatePageActivity extends AppCompatActivity {
 
     private ImageView submitButton, cancelButton;
     private RatingBar ratingBar;
-    private CheckBox checkMale, checkFemale, checkAccessibility;
+    private CheckBox checkMale, checkFemale, checkAccessibility, checkTrans;
     private EditText comment;
     private EditText nameOfRestaurant;
 
@@ -93,6 +93,8 @@ public class CreatePageActivity extends AppCompatActivity {
          boolean isMale = checkMale.isChecked();
          boolean isFemale = checkFemale.isChecked();
          boolean accessibie = checkAccessibility.isChecked();
+         boolean isTrans = checkTrans.isChecked();
+
          String commentword = String.valueOf(comment.getText());
 
 
@@ -113,6 +115,7 @@ public class CreatePageActivity extends AppCompatActivity {
         restroom.put("nameOfRestroom", name);
         restroom.put("male", isMale);
         restroom.put("female", isFemale);
+        restroom.put("transgender",isTrans);
         restroom.put("rating", cleaness);
         restroom.put("accessibility", accessibie);
         restroom.put("comment", commentword);
@@ -158,6 +161,7 @@ public class CreatePageActivity extends AppCompatActivity {
         comment = (EditText) findViewById(R.id.commentBox);
         submitButton = (ImageView) findViewById(R.id.submitButton);
         checkAccessibility = (CheckBox) findViewById(R.id.checkAccess);
+        checkTrans = (CheckBox) findViewById(R.id.checkTrans);
     }
 
     private void setCommentBox() {

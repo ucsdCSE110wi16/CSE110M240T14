@@ -155,5 +155,15 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="32dp" />
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transgender"
+        android:id="@+id/checkTrans"
+        android:layout_below="@+id/checkFemale"
+        android:layout_alignLeft="@+id/checkFemale"
+        android:layout_alignStart="@+id/checkFemale"
+        android:checked="false" />
+
 
 </RelativeLayout>
