@@ -24,12 +24,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal">
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:id="@+id/eraser"
-                android:src="@drawable/eraser"
-                android:background="@android:color/transparent"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -37,8 +31,16 @@
                 android:id="@+id/save"
                 android:src="@drawable/save"
                 android:background="@android:color/transparent"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upload"
+                android:id="@+id/upload"
+                android:layout_gravity="right" />
 
         </LinearLayout>
+
+
 
         <com.parse.flushr.DrawingView
             android:id="@+id/drawing"

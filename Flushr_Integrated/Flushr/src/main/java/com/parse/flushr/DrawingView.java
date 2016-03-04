@@ -32,7 +32,7 @@ public class DrawingView extends ImageView {
     //canvas bitmap
     private Bitmap canvasBitmap;
     //add a boolean instance variable to act as a flag for whether the user is currently erasing
-    private boolean erase=false;
+    //private boolean erase=false;
 
     private ImageView imageView;
 
@@ -120,11 +120,11 @@ public class DrawingView extends ImageView {
         return true;
     }
 
-    public void setErase(boolean isErase){
+    /*public void setErase(boolean isErase){
         //set erase true or false
         erase=isErase;
 
         if(erase) drawPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
         else drawPaint.setXfermode(null);
-    }
+    }*/
 }

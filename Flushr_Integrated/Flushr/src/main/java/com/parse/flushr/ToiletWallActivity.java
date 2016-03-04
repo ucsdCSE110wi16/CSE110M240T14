@@ -12,7 +12,9 @@
     import android.support.v7.app.AppCompatActivity;
     import android.util.Log;
     import android.view.View;
+    import android.widget.Button;
     import android.widget.ImageButton;
+    import android.widget.Toast;
 
     import com.parse.FindCallback;
     import com.parse.GetCallback;
@@ -28,12 +30,13 @@
     import java.io.OutputStream;
     import java.util.List;
     import java.util.UUID;
+    import java.util.logging.Handler;
 
     public class ToiletWallActivity extends AppCompatActivity implements View.OnClickListener {
 
         private DrawingView drawView;
-
-        private ImageButton currPaint, drawBtn, eraseBtn, saveBtn, backArrowButton;
+        private Button uploadBtn;
+        private ImageButton currPaint, drawBtn, saveBtn, backArrowButton;
         private ImageButton darkblueBtn, greenBtn, grayBtn, orangeBtn, redBtn, yellowBtn;
 
         boolean colorPalletisOpen = false;
@@ -42,18 +45,7 @@
 
         public void onClick(View view){
 
-            //respond to clicks
-            if(view.getId()==R.id.drawing){
-                //draw button clicked
-                drawView.setErase(false);
-            }
-            else if(view.getId()==R.id.eraser){
-                //switch to erase - choose size
-                drawView.setErase(true);
-            }
-            else if(view.getId()==R.id.save){
-
-                //save drawing
+            if(view.getId()==R.id.upload){
                 drawView.setDrawingCacheEnabled(true);
                 /*String imgSaved = MediaStore.Images.Media.insertImage(
                         getContentResolver(), drawView.getDrawingCache(),
@@ -65,6 +57,9 @@
 
                 file = new ParseFile("wall.png", b);
                 file.saveInBackground();
+                Toast savedToast = Toast.makeText(getApplicationContext(),
+                        "Drawing saved online!", Toast.LENGTH_SHORT);
+                savedToast.show();
                 Log.i("ParseFile", "PNG saved on Parse.");
 
                 ParseQuery<ParseObject> q = ParseQuery.getQuery("Restroom");
@@ -79,13 +74,30 @@
                 });
 
                 drawView.destroyDrawingCache();
+            }
+            else if(view.getId()==R.id.save){
 
+                drawView.setDrawingCacheEnabled(true);
+                String imgSave = MediaStore.Images.Media.insertImage(
+                        getContentResolver(), drawView.getDrawingCache(),
+                        UUID.randomUUID().toString()+" .png", "drawing"
+                );
+                if (imgSave != null) {
+                    Toast savedToast = Toast.makeText(getApplicationContext(),
+                            "Drawing saved to Gallery!", Toast.LENGTH_SHORT);
+                    savedToast.show();
+                } else {
+                    Toast unsavedToast = Toast.makeText(getApplicationContext(),
+                            "Image could not be saved.", Toast.LENGTH_SHORT);
+                    unsavedToast.show();
+                }
+                drawView.destroyDrawingCache();
             }
 
         }
 
         public void paintClicked(View view){
-            drawView.setErase(false);
+            //drawView.setErase(false);
             //use chosen color
             if(view!=currPaint){
                 //update color
@@ -158,9 +170,8 @@
 
             currPaint = (ImageButton)findViewById(R.id.darkblueColorButton);
 
-            eraseBtn = (ImageButton)findViewById(R.id.eraser);
-            eraseBtn.setOnClickListener(this);
-
+            uploadBtn = (Button)findViewById(R.id.upload);
+            uploadBtn.setOnClickListener(this);
             saveBtn = (ImageButton)findViewById(R.id.save);
             saveBtn.setOnClickListener(this);
 

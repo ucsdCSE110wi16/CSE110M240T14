@@ -2887,7 +2887,6 @@ containing a value of this type.
         public static final int end_padder=0x7f0d00dc;
         public static final int enterAlways=0x7f0d0016;
         public static final int enterAlwaysCollapsed=0x7f0d0017;
-        public static final int eraser=0x7f0d00b0;
         public static final int exitUntilCollapsed=0x7f0d0018;
         public static final int expand_activities_button=0x7f0d0065;
         public static final int expanded_menu=0x7f0d0078;
@@ -2972,7 +2971,7 @@ containing a value of this type.
         public static final int route_name=0x7f0d00c4;
         public static final int sandbox=0x7f0d004a;
         public static final int satellite=0x7f0d0037;
-        public static final int save=0x7f0d00b1;
+        public static final int save=0x7f0d00b0;
         public static final int screen=0x7f0d0028;
         public static final int scroll=0x7f0d0019;
         public static final int scrollIndicatorDown=0x7f0d0075;
@@ -3030,6 +3029,7 @@ containing a value of this type.
         public static final int top=0x7f0d0026;
         public static final int topPanel=0x7f0d006e;
         public static final int up=0x7f0d000a;
+        public static final int upload=0x7f0d00b1;
         public static final int useLogo=0x7f0d0015;
         public static final int view_offset_helper=0x7f0d000b;
         public static final int wide=0x7f0d0040;
