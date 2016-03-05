@@ -1,10 +1,10 @@
-﻿Scenario 
+Scenario 
 
 
 1. 
 Given I open the app FlushR
 and I want to create a restroom at a location
-when I click on the location
+when I click on “+” create button
 then there will be a page pop up allowed me to create the restroom
 
 
