@@ -29,12 +29,15 @@
 
 
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Help"
         android:id="@+id/helper"
-        android:onClick="openurl"
+        android:onClick="changeToInfoView"
+        android:background="@android:color/transparent"
+        android:src="@drawable/help"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
         />
 
 </RelativeLayout>

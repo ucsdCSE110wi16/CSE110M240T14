@@ -21,7 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_helper_page" />
+
 
 </android.support.design.widget.CoordinatorLayout>
-<!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/src/main/res/layout/app_bar_helper_page.xml -->
+<!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr/Flushr/src/main/res/layout/app_bar_helper_page.xml -->

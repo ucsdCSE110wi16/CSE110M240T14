@@ -69,8 +69,11 @@
             android:name=".ToiletWallActivity"
             android:label="@string/title_activity_toilet_wall"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RestroomInfoActivity" />
         <activity
-            android:name=".RestroomInfoActivity"></activity>
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

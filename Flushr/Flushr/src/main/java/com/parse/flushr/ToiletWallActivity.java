@@ -35,7 +35,7 @@
     public class ToiletWallActivity extends AppCompatActivity implements View.OnClickListener {
 
         private DrawingView drawView;
-        private Button uploadBtn;
+        private ImageButton uploadBtn;
         private ImageButton currPaint, drawBtn, saveBtn, backArrowButton;
         private ImageButton darkblueBtn, greenBtn, grayBtn, orangeBtn, redBtn, yellowBtn;
 
@@ -170,7 +170,7 @@
 
             currPaint = (ImageButton)findViewById(R.id.darkblueColorButton);
 
-            uploadBtn = (Button)findViewById(R.id.upload);
+            uploadBtn = (ImageButton)findViewById(R.id.upload);
             uploadBtn.setOnClickListener(this);
             saveBtn = (ImageButton)findViewById(R.id.save);
             saveBtn.setOnClickListener(this);

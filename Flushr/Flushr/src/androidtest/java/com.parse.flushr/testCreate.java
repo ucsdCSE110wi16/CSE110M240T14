@@ -8,14 +8,10 @@ import android.support.test.espresso.ViewInteraction;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.facebook.FacebookSdk;
-import com.parse.Parse;
-import com.parse.ParseFacebookUtils;
-import com.parse.ParseObject;
-
 import org.hamcrest.Matchers;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.Before;
 import org.junit.runner.RunWith;
 
 import static android.support.test.espresso.Espresso.onData;
@@ -29,8 +25,11 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.CoreMatchers.anything;
+import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.*;
 
-
+@RunWith(AndroidJUnit4.class)
 public class testCreate {
 
     private String mStringToBetyped;
@@ -39,22 +38,11 @@ public class testCreate {
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(
             MainActivity.class);
 
-    @Before
-    public void initValidString() {
-        // Specify a valid string.
-        mStringToBetyped = "Espresso";
-    }
-
     @Test
-    public void changeText_sameActivity() {
-        // Type text and then press the button.
-        onView(withId(R.id.editTextUserInput))
-                .perform(typeText(mStringToBetyped), closeSoftKeyboard());
-        onView(withId(R.id.changeTextBt)).perform(click());
+    public void CreatePageCheck() {
+        onView(withId((R.id.createButton))).check(matches(isDisplayed()));
+        //onView(allOf(withId(R.id.createButton),FirstViewMatcher.firstView())).perform(click());
 
-        // Check that the text was changed.
-        onView(withId(R.id.textToBeChanged))
-                .check(matches(withText(mStringToBetyped)));
     }
 }
 

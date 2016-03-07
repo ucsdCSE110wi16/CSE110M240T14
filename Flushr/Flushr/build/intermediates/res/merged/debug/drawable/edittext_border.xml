@@ -4,4 +4,4 @@
     <stroke android:width="4dp" android:color="#33B5E5" />
     <solid android:color="#ffffff" />
     <corners android:radius="10dp" />
-</shape><!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr_Integrated/Flushr/src/main/res/drawable/edittext_border.xml -->
+</shape><!-- From: file:/Users/nickge/Desktop/CSE110M240T14/Flushr/Flushr/src/main/res/drawable/edittext_border.xml -->

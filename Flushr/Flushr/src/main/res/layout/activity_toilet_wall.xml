@@ -30,13 +30,15 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/save"
                 android:src="@drawable/save"
-                android:background="@android:color/transparent"/>
-            <Button
+                android:background="@android:color/transparent"
+                android:paddingRight="20dp" />
+            <ImageButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="upload"
+                android:layout_height="fill_parent"
                 android:id="@+id/upload"
-                android:layout_gravity="right" />
+                android:src="@drawable/upload"
+                android:background="@android:color/transparent"/>
+
 
         </LinearLayout>
 

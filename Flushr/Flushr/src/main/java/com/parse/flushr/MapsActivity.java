@@ -48,6 +48,8 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
         Intent intent = new Intent(this, CreatePageActivity.class);
         startActivity(intent);
 
+
+        //refreshMarkers();
     }
 
 
@@ -88,10 +90,11 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
     }
 
 
-    public void openurl(View view) {
-        Uri uri = Uri.parse("https://codemancer.co.uk/2016/02/flushr-how-to-use/"); // missing 'http://' will cause crashed
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+    public void changeToInfoView(View view) {
+
+        Intent intent = new Intent(this, HelpActivity.class);
         startActivity(intent);
+
     }
 
     private void setUpMapIfNeeded() {
@@ -215,5 +218,28 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
     public void goRestroomInfo(){
         Intent i = new Intent(this, RestroomInfoActivity.class);
         startActivity(i);
+    }
+
+    public void refreshMarkers(){
+        Log.i("Maps", "REFRESHING MARKERS");
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Restroom");
+
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null) {
+                    Log.i("Objects found", Integer.toString(objects.size()));
+                    for (ParseObject object : objects) {
+                        mMap.addMarker(new MarkerOptions().position(new LatLng(object.getDouble("latitude"),
+                                object.getDouble("longitude"))).title(object.getString("nameofres"))
+                                .snippet(object.getObjectId()).icon(BitmapDescriptorFactory.fromResource(R.drawable.restroom_marker)));
+                    }
+                } else {
+                    Log.i("FATAL", "");
+                }
+
+            }
+        });
+        setUpMap();
     }
 }
