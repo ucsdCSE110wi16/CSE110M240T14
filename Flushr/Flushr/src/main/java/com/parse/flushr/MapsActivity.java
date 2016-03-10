@@ -47,11 +47,8 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
         Intent intent = new Intent(this, CreatePageActivity.class);
         startActivity(intent);
-
-
         //refreshMarkers();
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
