@@ -91,7 +91,7 @@ public class RestroomInfoActivity extends AppCompatActivity {
                         checkAccess.setChecked(true);
                     }
                     if(transgender){
-                        checkAccess.setChecked(true);
+                        checkTrans.setChecked(true);
                     }
 
 

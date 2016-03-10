@@ -55,6 +55,9 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        userLat = 0.0;
+        userLng = 0.0;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.

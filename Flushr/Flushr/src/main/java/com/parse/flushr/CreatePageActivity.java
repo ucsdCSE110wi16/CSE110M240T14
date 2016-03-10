@@ -32,6 +32,9 @@ public class CreatePageActivity extends AppCompatActivity {
     private CheckBox checkMale, checkFemale, checkAccessibility, checkTrans;
     private EditText comment;
     private EditText nameOfRestaurant;
+    public static String TOAST_STRING_SUCCESS;
+    public static String TOAST_STRING_FAILURE;
+
 
     ParseObject restroom = new ParseObject("Restroom");
 
@@ -99,8 +102,19 @@ public class CreatePageActivity extends AppCompatActivity {
 
 
 
-        if(TextUtils.isEmpty(name) || (isMale == false && isFemale == false)) {
-            Toast.makeText(CreatePageActivity.this, "There were an missing information, please be completed", Toast.LENGTH_SHORT).show();
+        if(TextUtils.isEmpty(name)
+                || (isMale == false && isFemale == false)) {
+            Toast.makeText(CreatePageActivity.this,
+                    "There were an missing information, please be completed",
+                    Toast.LENGTH_SHORT).show();
+            TOAST_STRING_FAILURE = "There were an missing information, please be completed";
+            return;
+        }
+        else if (MapsActivity.userLat == 0.0 && MapsActivity.userLng == 0.0){
+            Toast.makeText(CreatePageActivity.this,
+                    "Invalid location.",
+                    Toast.LENGTH_SHORT).show();
+            TOAST_STRING_FAILURE = "Invalid location.";
             return;
         }
 
@@ -127,6 +141,7 @@ public class CreatePageActivity extends AppCompatActivity {
             public void done(ParseException e) {
                 if (e == null) {
                     Toast.makeText(CreatePageActivity.this, "A new restroom has been created", Toast.LENGTH_SHORT).show();
+                    TOAST_STRING_SUCCESS = "A new restroom has been created";
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {

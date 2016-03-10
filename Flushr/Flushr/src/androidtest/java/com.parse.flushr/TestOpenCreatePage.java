@@ -30,7 +30,7 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.*;
 
 @RunWith(AndroidJUnit4.class)
-public class testCreate {
+public class TestOpenCreatePage {
 
     private String mStringToBetyped;
 
@@ -40,8 +40,15 @@ public class testCreate {
 
     @Test
     public void CreatePageCheck() {
+
+        try {
+            Thread.sleep(3000);
+        } catch(InterruptedException e){
+            e.printStackTrace();
+        }
+
         onView(withId((R.id.createButton))).check(matches(isDisplayed()));
-        //onView(allOf(withId(R.id.createButton),FirstViewMatcher.firstView())).perform(click());
+        onView(allOf(withId(R.id.createButton),FirstViewMatcher.firstView())).perform(click());
 
     }
 }
