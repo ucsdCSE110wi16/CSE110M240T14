@@ -45,6 +45,13 @@ public class TestHelpPage {
 
         ViewActions.scrollTo();
         ViewActions.swipeDown();
+
+        try {
+            Thread.sleep(3000);
+        } catch(InterruptedException e){
+            e.printStackTrace();
+        }
+
         ViewActions.swipeUp();
         ViewActions.swipeDown();
     }

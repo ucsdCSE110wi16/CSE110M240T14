@@ -55,6 +55,12 @@ public class TestCreateWithUnfilledBlanks {
         onView(withId((R.id.checkFemale))).check(matches(isDisplayed()));
         onView(allOf(withId(R.id.checkFemale), FirstViewMatcher.firstView())).perform(click());
 
+        try {
+            Thread.sleep(1000);
+        } catch(InterruptedException e){
+            e.printStackTrace();
+        }
+
         onView(withId(R.id.submitButton)).check(matches(isDisplayed()));
         onView(allOf(withId(R.id.submitButton), FirstViewMatcher.firstView())).perform(click());
 

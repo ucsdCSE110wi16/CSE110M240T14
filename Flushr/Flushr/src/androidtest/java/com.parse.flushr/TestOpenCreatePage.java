@@ -48,6 +48,13 @@ public class TestOpenCreatePage {
         }
 
         onView(withId((R.id.createButton))).check(matches(isDisplayed()));
+
+        try {
+            Thread.sleep(3000);
+        } catch(InterruptedException e){
+            e.printStackTrace();
+        }
+
         onView(allOf(withId(R.id.createButton),FirstViewMatcher.firstView())).perform(click());
 
     }

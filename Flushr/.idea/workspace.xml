@@ -63,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestOpenCreatePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCreateWithUnfilledBlanks.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestCreateWithUnfilledBlanks.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestCreateWithUnfilledBlanks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="72" />
+            <state vertical-scroll-proportion="-0.2465374">
+              <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -89,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestHelpPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -102,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestPositioning.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="49" selection-end-column="9" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -111,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flushr/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6736527">
+            <state vertical-scroll-proportion="-8.333333">
               <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
@@ -1964,15 +1964,15 @@
         <option value="$PROJECT_DIR$/Flushr/src/main/java/com/parse/flushr/RestroomInfoActivity.java" />
         <option value="$PROJECT_DIR$/Flushr/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestOpenCreatePage.java" />
         <option value="$PROJECT_DIR$/Flushr/src/main/java/com/parse/flushr/CreatePageActivity.java" />
-        <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestCreateWithUnfilledBlanks.java" />
-        <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestHelpPage.java" />
         <option value="$PROJECT_DIR$/Flushr/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Flushr/src/main/java/com/parse/flushr/MapsActivity.java" />
         <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestPositioning.java" />
         <option value="$PROJECT_DIR$/Flushr/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestPositioning.java" />
+        <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestOpenCreatePage.java" />
+        <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestHelpPage.java" />
+        <option value="$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestCreateWithUnfilledBlanks.java" />
       </list>
     </option>
   </component>
@@ -2471,7 +2471,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2495,7 +2495,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2609047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40791476" sideWeight="0.8247173" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40791476" sideWeight="0.8247173" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2902,17 +2902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestOpenCreatePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flushr/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2941,10 +2930,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Flushr/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.333333">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestPositioning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestOpenCreatePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestHelpPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -2954,31 +2973,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestCreateWithUnfilledBlanks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="72" />
+        <state vertical-scroll-proportion="-0.2465374">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flushr/src/AndroidTest/java/com.parse.flushr/TestPositioning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flushr/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6736527">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
